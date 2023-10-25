@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <!-- DOM - Document Object Model -->
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+
+        /* Selecionar por:
+        
+        Marca, ID, Nome, Classe e por Seletor
+
+        */
+
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        var d = window.document.getElementById('msg')
+        /*var d = window.document.querySelector('div#msg')*/
+
+        p1.style.color = 'blue'
+        corpo.style.backgroundColor = 'white'
+        d.style.backgroundColor = 'darkRed'
+        d.style.color = 'white'
+        d.style.textAlign = 'center'
+
+
+
+    </script>
 </body>
 </html>
