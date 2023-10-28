@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morador</title>
+</head>
+<body>
+    <h1>Você mora no Brasil?</h1>
+    <input type="text" id="bra">
+    <input type="button" value="enviar" onclick="clicou()">
+    <div id="res">Resposta</div>
+    <script>
+        function clicou(){
+            var txt = window.document.getElementById('bra').value
+            var r = window.document.getElementById('res')
+            if(txt === 'sim'){
+                r.innerHTML = `Você é brasileiro`
+            }else{
+                r.innerHTML = `Você é estrangeiro`
+            }
+        }
+    </script>
+</body>
+</html>
