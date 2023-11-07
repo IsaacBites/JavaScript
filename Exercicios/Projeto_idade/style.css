@@ -12,6 +12,7 @@ body{
 header{
     color: white;
     text-align: center;
+    margin: 20px;
 }
 header > h1{
     font-size: 30px;
@@ -35,7 +36,16 @@ div#res{
 }
 
 footer{
-    color: white;
+    color: rgb(216, 168, 168);
     text-align: center;
+    padding: 10px;
+}
+
+footer > p > a{
+    color: white;
     font-style: italic;
+    text-decoration: none;
+}
+footer > p> a:hover{
+    color: rgb(124, 119, 119);
 }
