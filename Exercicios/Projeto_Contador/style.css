@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: aqua;
+}
+
+div{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
