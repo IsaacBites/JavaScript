@@ -7,6 +7,26 @@
     <title>Projeto_Contador</title>
 </head>
 <body>
-    <div></div>
+    <h1>Projeto Contador</h1>
+    <div>
+        <p>
+            <label for="idinicio">Inicio: </label>
+            <input type="number" name="inicio" id="idinicio" min="0">
+        </p>
+        <p><label for="idfim">Fim: </label>
+            <input type="number" name="fim" id="idfim" min="0">
+        </p>
+        <p>
+            <label for="idpasso">Passo: </label>
+            <input type="number" name="passo" id="idpasso" min="0">
+        </p>
+        <p>
+            <button onclick="contar()">Contar</button>
+        </p>
+        <p id="msg">
+            Preparando a contagem....
+        </p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
