@@ -16,32 +16,23 @@ h1{
     padding: 20px;
 }
 
-div{
+section{
     background-color: white;
-    width: 500px;
     height: 500px;
+    width: 500px;
     margin: auto;
-    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
-div > p{
-    padding: 30px;
-    font-size: 30px;
+section > div > p{
+    font-size: 20px;
 }
 
 input{
     padding: 10px;
-    font-size: 15px;
-}
-
-button{
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 5px;    
-}
-
-.msg{
     margin: 10px;
+    font-size: 15px;
 }
 
 footer{
