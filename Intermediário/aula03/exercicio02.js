@@ -16,9 +16,22 @@ IMC em adultos Condições:
 
 */
 
+const peso = 140
+const altura = 1.69
 
+imc = peso / (altura * altura)
 
-
+if(imc < 18.5){
+    console.log('Abaixo do peso')
+}else if(imc < 25){
+    console.log('Peso Normal')  
+}else if(imc < 30){
+    console.log('Acima do Peso')
+}else if(imc < 40){
+    console.log('Obeso')
+}else{
+    console.log('Obesidade Grave')
+}
 
 
 
