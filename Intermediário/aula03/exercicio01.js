@@ -10,3 +10,38 @@ Classificação:
  - Média acima de 7, passou de semestre 
 
 */
+
+const n1 = 6
+const n2 = 7
+const n3 = 7
+
+media = (n1 + n2 + n3) / 3
+
+if(media < 5){
+    console.log('Reprovado')
+}else if(media < 7){
+    console.log('Recuperação')
+}else{
+    console.log('Aprovado')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
