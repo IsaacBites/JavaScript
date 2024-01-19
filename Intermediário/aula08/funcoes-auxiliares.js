@@ -1,7 +1,10 @@
-function gets(){
-    return 10
+function gets(a, b){
+    soma = a + b
+    return soma
 }
 
-function get(texto){
-    console.log(texto);
+function print(texto){
+    console.log('Teste');
 }
+
+module.exports = {gets, print}
