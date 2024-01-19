@@ -1,3 +1,3 @@
-const funcoes = require('./funcoes-auxiliares')
+const {gets, print} = require('./funcoes-auxiliares')
 
-console.log(funcoes.gets(10, 15))
+print(gets())
