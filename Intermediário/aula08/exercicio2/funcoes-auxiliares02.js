@@ -1,4 +1,10 @@
+const v = [5, 3, 4, 1, 10, 8]
+let i = 0
+
 function gets() {
+    const valor = v[i]
+    i++
+    return valor
 }
 
 function print(texto){

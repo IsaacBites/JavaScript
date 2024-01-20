@@ -17,3 +17,22 @@
 */
 
 const {gets, print} = require('./funcoes-auxiliares02')
+
+let maior = 0
+let menor = Infinity
+
+for (let i = 0; i < 7; i++) {
+    let aux = gets()
+    if(aux%2 == 0) {
+        if(aux > maior){
+            maior = aux
+        }
+    }else{
+        if(aux < menor){
+            menor = aux
+        } 
+    }
+}
+
+console.log(maior)
+console.log(menor)
