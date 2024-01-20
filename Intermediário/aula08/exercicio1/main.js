@@ -11,5 +11,13 @@
             Recuperação
 */
 
-
 const {gets, print} = require('./funcoes-auxiliares01')
+
+const m = gets()
+if(m < 5){
+    console.log('Reprovado')
+}else if(m < 7){
+    console.log('Recuperação')
+}else{
+    console.log('Aprovado')
+}
