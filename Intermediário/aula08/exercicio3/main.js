@@ -21,3 +21,20 @@
 */
 
 const {gets, print} = require('./funcoes-auxiliares03')
+
+const sal_bruto = gets()
+const beneficios = 250
+
+if(sal_bruto <= 1100){
+    console.log('5%')
+    sal_Final = sal_bruto - (sal_bruto * 0.1) + beneficios
+}else if(sal_bruto <= 2500){
+    console.log('10%')
+    sal_Final = sal_bruto - (sal_bruto * 0.1) + beneficios
+}else{
+    console.log('15%')
+    sal_Final = sal_bruto - (sal_bruto * 0.1) + beneficios
+}
+
+
+console.log(sal_Final)
