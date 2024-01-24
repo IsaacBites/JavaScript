@@ -34,5 +34,5 @@ for (let i = 0; i < 7; i++) {
     }
 }
 
-console.log(maior)
-console.log(menor)
+console.log(`Maior número par: ${maior}`)
+console.log(`Menor número impar: ${menor}`)

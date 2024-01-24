@@ -22,19 +22,20 @@
 
 const {gets, print} = require('./funcoes-auxiliares03')
 
-const sal_bruto = gets()
-const beneficios = 250
+const valorSalarioBruto = gets()
+const adicionalBeneficios = 400
 
-if(sal_bruto <= 1100){
-    console.log('5%')
-    sal_Final = sal_bruto - (sal_bruto * 0.1) + beneficios
-}else if(sal_bruto <= 2500){
-    console.log('10%')
-    sal_Final = sal_bruto - (sal_bruto * 0.1) + beneficios
-}else{
-    console.log('15%')
-    sal_Final = sal_bruto - (sal_bruto * 0.1) + beneficios
+let percentualImposto;
+
+if (valorSalarioBruto <= 1100.00) {
+    percentualImposto = 5.00;
+} else if (valorSalarioBruto <= 2500.00) {
+    percentualImposto = 10.00;
+} else {
+    percentualImposto = 15.00;
 }
 
+const valorImposto = (valorSalarioBruto * percentualImposto) / 100;
+const salarioTransferido = valorSalarioBruto - valorImposto + adicionalBeneficios;
 
-console.log(sal_Final)
+console.log(salarioTransferido.toFixed(2));

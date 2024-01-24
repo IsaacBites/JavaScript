@@ -1,5 +1,5 @@
 function gets() {
-    const sal_bruto = 2000
+    const sal_bruto = 3000
     return sal_bruto 
 }
 
