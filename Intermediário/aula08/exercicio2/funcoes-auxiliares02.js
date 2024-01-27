@@ -1,8 +1,8 @@
-const v = [5, 3, 4, 1, 10, 8]
+const entradas = [5, 3, 4, 1, 10, 8]
 let i = 0
 
 function gets() {
-    const valor = v[i]
+    const valor = entradas[i]
     i++
     return valor
 }
