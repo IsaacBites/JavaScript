@@ -18,21 +18,22 @@
 
 const {gets, print} = require('./funcoes-auxiliares02')
 
-let maior = 0
-let menor = Infinity
+const N = gets()
+let maiorNumeroPar = null
+let menorNumeroImpar = null
 
-for (let i = 0; i < 7; i++) {
-    let aux = gets()
-    if(aux%2 == 0) {
-        if(aux > maior){
-            maior = aux
+for (let i = 0; i < N; i++) {
+    const numero = gets()
+    if(numero % 2 === 0){
+        if(maiorNumeroPar === null || numero > maiorNumeroPar){
+            maiorNumeroPar = numero
         }
     }else{
-        if(aux < menor){
-            menor = aux
-        } 
+        if(menorNumeroImpar === null || numero < menorNumeroImpar){
+            menorNumeroImpar = numero
+        }
     }
 }
 
-console.log(`Maior número par: ${maior}`)
-console.log(`Menor número impar: ${menor}`)
+console.log(`Maior número par: ${maiorNumeroPar}`)
+console.log(`Menor número impar: ${menorNumeroImpar}`)
