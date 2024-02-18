@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
